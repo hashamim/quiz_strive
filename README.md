@@ -1,3 +1,24 @@
+This project uses Create React App on the frontend and Airtable on the backend;
+for more info on using create react app go to the bottom of the readme.
+
+The airtable links can be found here:
+
+Quiz Templates: https://airtable.com/shrB5YfiadVivuuKA
+
+User Responses: https://airtable.com/shrXJfvVK75UcNvfv
+
+For the purpose of simplicity it was assumed all questions would have exactly 5 answers. 
+
+The database has two objects: A quiz template, and a user response. Quiz Templates have a name as well as a field for each question;
+User Responses have a field for each response to a question as well as a has one relationship with a quiz template
+
+The frontend has functions for api calls that can be found in sr/utils/api_utils
+The main components can be found in src/components
+src/App.js was modified to allow for use of react-router-dom for multi page features
+
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
